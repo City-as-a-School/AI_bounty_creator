@@ -27,6 +27,7 @@ const Home = () => {
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
   }
+
   const onUserChangedText = (event) => {
     console.log(event.target.value);
     setUserInput(event.target.value);
@@ -39,10 +40,10 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Access all human Knowledge in the blink of an AI</h1>
+            <h1>CITY AS A SCHOOL PATHWAY GENERATOR</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Ask a question, get a course in seconds</h2>
+            <h2>Input a job description, get a suggested pathway</h2>
           </div>
         </div>
       </div>
@@ -56,8 +57,8 @@ const Home = () => {
 
         <div className="prompt-buttons">
           <a className={isGenerating ? 'generate-button loading' : 'generate-button'} 
-            onClick={callGenerateEndpoint}
-          >
+            onClick={callGenerateEndpoint}>
+              
             <div className="generate">
             {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
              
