@@ -87,7 +87,7 @@ const Home = () => {
             <p>{apiOutput}</p>
           </div>
 
-          <div className="output-class-suggestions-container">
+          <div className="output-class-r-container">
             <div className="output-header">
               <h3>Suggested Classes & Resources</h3>
             </div>

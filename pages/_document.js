@@ -5,10 +5,10 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="AI Pathway creator" key="title"/>
-        <meta property="og:description" content="build by City as a School" key="description"/>
+        <meta property="og:description" content="built by City as a School" key="description"/>
         <meta
           property="og:image"
-          content="https://cdn.buildspace.so/courses/gpt3-writer/project-og.jpg"
+          content=""
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
