@@ -26,12 +26,21 @@ const Home = () => {
 
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
+
+    if (output) {
+      // If the output is not empty, display the div element
+      const divElement = document.getElementById('output-class-suggestions-container');
+      divElement.style.display = 'block' ;
+    }
+
   }
 
   const onUserChangedText = (event) => {
     console.log(event.target.value);
     setUserInput(event.target.value);
   };
+
+
   return (
     <div className="root">
       <Head>
@@ -47,6 +56,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="prompt-container">
         <textarea
           placeholder="start typing here"
@@ -56,12 +66,12 @@ const Home = () => {
         />
 
         <div className="prompt-buttons">
-          <a className={isGenerating ? 'generate-button loading' : 'generate-button'} 
+          <a className={isGenerating ? 'generate-button loading' : 'generate-button'}
             onClick={callGenerateEndpoint}>
-              
+
             <div className="generate">
-            {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
-             
+              {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
+
             </div>
           </a>
         </div>
@@ -72,11 +82,43 @@ const Home = () => {
               <h3>Output</h3>
             </div>
           </div>
+
           <div className="output-content">
             <p>{apiOutput}</p>
           </div>
-        </div>
 
+          <div className="output-class-suggestions-container">
+            <div className="output-header">
+              <h3>Suggested Classes & Resources</h3>
+            </div>
+            <div className="class-cards">
+              <div class="card">
+                <img class="card__header" src="https://www.hw.ac.uk/programmes/img/Subjects/Computer-Science/AI-test-800x600_rdax_725x544s.jpg" alt="Product image" />
+                <h3 class="card__title">Computer Science Foundations</h3>
+                <p class="card__description">A short description of the product</p>
+                <p class="card__price">$20.99</p>
+                <button class="card__button">Buy Now</button>
+              </div>
+
+              <div class="card">
+                <img class="card__header" src="https://images5.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg" alt="Product image" />
+                <h3 class="card__title">Intro to Google Platforms</h3>
+                <p class="card__description">A short description of the product</p>
+                <p class="card__price">$25.99</p>
+                <button class="card__button">Buy Now</button>
+              </div>
+
+              <div class="card">
+                <img class="card__header" src="https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg?resize=400x0" alt="Product image" />
+                <h3 class="card__title">App Design Fundementals</h3>
+                <p class="card__description">A short description of the product</p>
+                <p class="card__price">$99.99</p>
+                <button class="card__button">Buy Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
