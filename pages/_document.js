@@ -4,8 +4,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta property="og:title" content="AI Pathway creator" key="title"/>
-        <meta property="og:description" content="built by City as a School" key="description"/>
+        <meta property="og:title" content="AI Bounty Creator" key="title"/>
+        <meta property="og:description" content="built by the Fractional Talent Guild" key="description"/>
         <meta
           property="og:image"
           content=""

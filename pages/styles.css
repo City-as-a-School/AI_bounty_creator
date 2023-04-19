@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -40,7 +40,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: rgb(23, 92, 255);
+    color: rgb(255, 255, 255);
 }
 
 .header-title {
@@ -63,7 +63,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    color: rgb(23, 92, 255);
+    color: rgb(255, 255, 255);
 }
 
 .prompt-container {
@@ -80,7 +80,7 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(234, 235, 236, 1.0);
+    border-color: rgb(135, 135, 135);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
@@ -108,13 +108,13 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: none;
 }
 
 textarea {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Circularstd', sans-serif;
 }
 
 
@@ -148,7 +148,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgb(23, 92, 255);
+    color: rgb(255, 255, 255);
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -304,7 +304,7 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -323,7 +323,7 @@ textarea {
 .output-content p {
     text-align: left;
     white-space: pre-line;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
@@ -414,19 +414,20 @@ textarea {
 
 .card__title {
   font-size: 1.25rem;
+  color: #ffffff;
   font-weight: 600;
   margin: 10px 0;
 }
 
 .card__description {
   font-size: 0.875rem;
-  color: #666;
+  color: #ffffff;
   margin: 10px 0;
 }
 
 .card__price {
   font-size: 1.125rem;
-  color: #333;
+  color: #ffffff;
   margin: 10px 0;
 }
 
@@ -437,7 +438,7 @@ textarea {
   font-size: 0.875rem;
   font-weight: 600;
   color: #fff;
-  background-color: #333;
+  background-color: #717171;
   padding: 10px 20px;
   cursor: pointer;
 }
