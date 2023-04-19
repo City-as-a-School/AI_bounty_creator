@@ -14,4 +14,4 @@ yarn dev
 
 # hosting
 
-App is deployed on Raleway here: pathway-gen.up.railway.app
+App is deployed on Raleway here: https://aibountyscoper-production.up.railway.app/
