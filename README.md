@@ -1,5 +1,15 @@
-# ARK
+# AI Bounty Creator
 ### Welcome 👋
-This takes the input of a job description and ouput a suggested curriculum for a learner to take. It then displays classes from the City as a School marketplace that are relevant to the skills required for success in the job role. 
+
+1) This takes the input of a problem statement or feature ideas and ouputs a bountry project brief (BPB)
+2) Employers then add more details changes to the (BPB)
+3) The (BPB) is added to a bountry board with skills tags for talent to discover
+4) Projects are completed, payments are handled by the bountry board software
+
+# install next if you don't have it 
+yarn add next react react-dom
+
+# run it 
+yarn dev
 
 App is deployed on Raleway here: pathway-gen.up.railway.app
