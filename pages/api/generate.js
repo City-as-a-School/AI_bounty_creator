@@ -6,15 +6,15 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "You are a generative curriculum builder AI. Given a job description you give a high level curriculum required for a job applicant to learn the skills required to meet the job criteria. ";
-const basePromptSuffix = "This is the suggested curriculum for you to follow in order to meet the job skills criteria \n Module 1:" ;
+const basePromptPrefix = "You are an expert project manager. Given a problem statement or feature idea you write clear and concise project briefs. My problem or product feature idea is ";
+const basePromptSuffix = " This is the project brief that a coworker can use to solve the problem or build the feature including the success criteria" ;
 
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}${basePromptSuffix}`)
 
   const baseCompletion = await openai.createCompletion({
-     model: 'text-davinci-003',
+    model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}${basePromptSuffix}`,
     temperature: 0.7,
     max_tokens: 250,

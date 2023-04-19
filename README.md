@@ -12,4 +12,6 @@ yarn add next react react-dom
 # run it 
 yarn dev
 
+# hosting
+
 App is deployed on Raleway here: pathway-gen.up.railway.app
